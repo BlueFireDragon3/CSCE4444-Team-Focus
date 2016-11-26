@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bhastings.workoutwithfriends.AddWorkoutFragment"
+    android:background="@drawable/weights">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"    >
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
+    <TextView
+        android:text="What workout did you do?"
+        android:textColor="@color/colorAccent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMessage"
+        android:textSize="30sp"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        style="@android:style/Widget.Spinner.DropDown" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bSubmit" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:text="Go for a Run!"
+        android:textColor="@color/colorAccent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHeading2"
+        android:textSize="30sp"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:text="GO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />
+    </LinearLayout>
+</ScrollView>

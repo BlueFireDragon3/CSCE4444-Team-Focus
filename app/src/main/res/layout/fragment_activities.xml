@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bhastings.workoutwithfriends.ProfileFragment"
+    android:background="@drawable/treadmills">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+         />
+
+        <TextView
+            android:text="Welcome to the Activities Center!"
+            android:textColor="@color/colorAccent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMessage1"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <TextView
+            android:text="Create your own workout or add exercises for your workouts!"
+            android:textColor="@color/colorAccent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMessage2"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/Workouts"
+            android:id="@+id/imageView4" />
+
+        <Button
+            android:text="New Workout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bNewWorkout" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Your Workouts:"
+            android:textColor="@color/colorAccent2"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWorkoutsHeader"
+            android:layout_weight="0.08" />
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/lvWorkouts"
+            android:layout_height="323dp" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/ivNewExerciseImage"
+            android:src="@drawable/exercises"/>
+
+        <TextView
+            android:text="Your Exercises:"
+            android:textColor="@color/colorAccent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvExerciseListHeader" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/Exercise1"
+            android:layout_height="wrap_content"
+            android:entries="@array/Exercises"
+            style="@android:style/Widget.Spinner.DropDown" />
+
+        <Button
+            android:text="View Exercise Details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bViewExerciseDetails" />
+
+
+    </LinearLayout>
+</ScrollView>
